@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>_50Lomi.AmharicEnglishTransliteration</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\ProcessedAmharicEnglishTranslation.csv" />
+    <None Remove="Data\ProcessedEnglishToGeezeTransliteration.csv" />
+    <None Remove="EnglishAmharicDictionary.csv" />
+    <None Remove="EnglishPhoneticDictionary.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\EnglishAmharicDictionary.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\EnglishPhoneticDictionary.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ProcessedAmharicEnglishTranslation.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\ProcessedEnglishToGeezeTransliteration.csv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace _50Lomi.AmharicEnglishTransliteration
+namespace AmharicEnglishTransliteration
 {
     public static class EnglishRules
     {

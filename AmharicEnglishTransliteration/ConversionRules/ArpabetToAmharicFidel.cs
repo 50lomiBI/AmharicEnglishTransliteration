@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace _50Lomi.AmharicEnglishTransliteration
+namespace AmharicEnglishTransliteration
 {
     public class ArpabetToAmharicFidel
     {

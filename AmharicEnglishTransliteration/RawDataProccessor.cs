@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace _50Lomi.AmharicEnglishTransliteration
+namespace AmharicEnglishTransliteration
 {
     public class RawDataProccessor
     {

@@ -1,15 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>_50Lomi.AmharicEnglishTransliteration</RootNamespace>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Data\EnglishAmharicDictionary.csv" />
+    <None Remove="Data\EnglishPhoneticDictionary.txt" />
     <None Remove="Data\ProcessedAmharicEnglishTranslation.csv" />
     <None Remove="Data\ProcessedEnglishToGeezeTransliteration.csv" />
-    <None Remove="EnglishAmharicDictionary.csv" />
-    <None Remove="EnglishPhoneticDictionary.txt" />
   </ItemGroup>
 
   <ItemGroup>

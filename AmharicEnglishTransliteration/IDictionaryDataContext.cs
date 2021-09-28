@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _50Lomi.AmharicEnglishTransliteration
+namespace AmharicEnglishTransliteration
 {
     public interface IDictionaryDataContext
     {

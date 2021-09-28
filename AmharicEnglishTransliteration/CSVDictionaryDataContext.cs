@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _50Lomi.AmharicEnglishTransliteration
+namespace AmharicEnglishTransliteration
 {
     public class CSVDictionaryDataContext : IDictionaryDataContext
     {
@@ -45,7 +45,11 @@ namespace _50Lomi.AmharicEnglishTransliteration
                 return englishAmharicPhoneticDictionary;
 
             var amharicPhoneticCSV = File.ReadAllText(processedEnglishToGeezeTransliterationAddress);
-            englishAmharicPhoneticDictionary = amharicPhoneticCSV.Split('\n').Where(item => !(string.IsNullOrEmpty(item) || item.StartsWith(";;;"))).Select(item => item.Split(',')).Select(item => new KeyValuePair<string, string>(item.FirstOrDefault(), item.LastOrDefault().Replace("\r", "")));
+            englishAmharicPhoneticDictionary = amharicPhoneticCSV
+                .Split('\n')
+                .Where(item => !(string.IsNullOrEmpty(item) || item.StartsWith(";;;")))
+                .Select(item => item.Split(','))
+                .Select(item => new KeyValuePair<string, string>(item.FirstOrDefault(), item.LastOrDefault().Replace("\r", "")));
             return englishAmharicPhoneticDictionary;
         }
 
